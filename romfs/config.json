@@ -1,0 +1,6 @@
+{
+"name":"Winlator Switch",
+"version":"0.1",
+"default_driver":"mesa",
+"renderer":"SDL2"
+}
