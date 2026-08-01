@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 3.18)
+
+project(WinlatorSwitch)
+
+
+set(CMAKE_CXX_STANDARD 17)
+
+
+add_executable(
+winlator-switch
+
+source/main.cpp
+source/app.cpp
+source/input.cpp
+source/renderer.cpp
+source/filesystem.cpp
+source/container.cpp
+source/runtime.cpp
+)
+
+
+target_include_directories(
+winlator-switch
+PRIVATE
+include
+)
+
+
+target_link_libraries(
+winlator-switch
+
+SDL2
+nx
+)
+
+
+set_target_properties(
+winlator-switch
+PROPERTIES
+SUFFIX ".nro"
+)
